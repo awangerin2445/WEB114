@@ -1,0 +1,82 @@
+<!--
+  Name: Adrian Wangerin
+  Form page
+  Date: 2025-11-16
+  Contact form page for mock professional photography website (final project)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adrian Wangerin Photography | Contact</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Contact Me</h1>
+			<p>Moments captured in their natural element</p>
+		</header>
+		<nav> <!-- navigation bar at the top of the page-->
+			<ul>
+				<li><a href="final1.html">Home</a></li>
+				<li><a href="final2.html">Details</a></li>
+				<li><a href="final3.html">Contact</a></li>
+				<li><a href="final4.html">Credits</a></li>
+				</ul>
+		</nav>
+	<main>
+		<section>
+			<h2>To contact me and leave a message, please fill out the form below.</h2>
+			<form action="#" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="date">Photoshoot preferred date:</label> <!-- I added the date and timee fields together to meet users expectations-->
+				<input type="date" id="date" name="date">
+				<label for="shoot-type">Please select your preferred timeframe. If you plan to schedule for more than two hours,
+				please include details in the message field.</label>
+					<select id="shoot-type" name="shoot-type">
+						<option value="option1">10am-12pm</option>
+						<option value="option2">12pm-2pm</option>
+						<option value="option3">2pm-4:30pm</option>
+						<option value="option4">4:30pm-6:30pm</option>
+						<option value="option5">Other</option>
+					</select>
+			<fieldset>
+				<legend>Please select the type of photos you would like to capture:</legend>
+					<label><input type="checkbox" name="interest" value="landscape"> Landscape</label>
+					<label><input type="checkbox" name="interest" value="portrait"> Portrait</label>
+					<label><input type="checkbox" name="interest" value="wildlife"> Wildlife</label>
+					<label><input type="checkbox" name="interest" value="pets"> Pets</label>
+					<label><input type="checkbox" name="interest" value="vehicles"> Vehicles</label>
+					<label><input type="checkbox" name="interest" value="business"> Business & Advertising</label>
+			</fieldset>
+			<fieldset>
+				<legend>Preferred communication method:</legend>
+					<label><input type="radio" name="contact" value="email" checked> Email</label>
+					<label><input type="radio" name="contact" value="phone"> Phone</label>
+			</fieldset>
+				<label for="message">Please provide details about your expectations:</label>
+				<textarea id="message" name="message" rows="5"></textarea>
+			<div class="form-buttons">
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</div>
+			</form>
+		</section>
+		<section>
+			<h2>Sample Image</h2>
+				<div class="photo">
+					<img src="images/gallery6.jpg" alt="Sample photo for contact page">
+					<p>Let's capture your story</p>
+				</div>
+		</section>
+    </main>
+    <footer>
+		<p>&copy; 2025 Adrian Wangerin Photography. All rights reserved.</p>
+		<p>Contact: <a href="mailto:adrian.wangerin2445@gmailcom">adrian.wangerin2445@gmailcom</a></p>
+	</footer>
+	</div>
+</body>
+</html>
