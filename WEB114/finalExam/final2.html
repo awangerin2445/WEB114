@@ -1,0 +1,142 @@
+<!--
+  Name: Adrian Wangerin
+  Detail page
+  Date: 2025-11-16
+  Details page for mock professional photography website (final project)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 This creates three columns on desktop size screens */
+  gap: 2em;
+  justify-items: center;
+  margin-top: 1em;
+}
+
+#gallery img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.08);
+}
+#galleryPreview {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.08);
+}
+
+    </style>
+
+	<title>Adrian Wangerin Photography | Details</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Photography Details</h1>
+			<p>My style, process, and tips for great photos.</p>
+		</header>
+		<nav> <!-- navigation bar at the top of the page-->
+			<ul>
+				<li><a href="final1.html">Home</a></li>
+				<li><a href="final2.html">Details</a></li>
+				<li><a href="final3.html">Contact</a></li>
+				<li><a href="final4.html">Credits</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<h2>My Photography Style</h2>
+				<p>
+				I enjoy capturing moments in real time to bring out the unique characteristics of each subject. I take a more candid approach allowing the captured moments to feel genuine.
+				</p>
+			<div class="photo">
+				<img src="images/gallery4.jpg" alt="Fashion photoshoot, Downtown Lawrence KS"> <!--This is a sample image as an introduction to users-->
+				<p class="photocaption">Fashion photoshoot in natural lighting, Lawrence KS</p>
+			</div>
+
+			</section>
+			<section>
+				<h2>Gallery</h2>
+				<h3 id="gallery-heading"></h3>
+				<div class="gallery-container">
+    				<img id="galleryPreview" src="" alt="">
+    				<p id="caption"></p>
+				</div>   
+				<div class="buttons">
+    				<button id="prev"> Previous</button>
+    				<button id="next">Next </button>
+  				</div>
+			</section>
+			<section>
+				<h2>Editing Process</h2>
+					<p>
+						Photo editing is a crucial aspect of my work. 
+						I always attempt to take many photos to be able to perfectly capture the moment. 
+						This approach is often necessary when ensuring that each image reflects the mood and intent of the moment. 
+						After making selections with my clients, I make necessary corrections that make the photos feel realistic. 
+						If necessary, I will make adjustments like colorgrading to set the mood or theme. Other times I use photoshop 
+						skills to enhance details just like an artist, it removes imperfections and satisfies our clients needs. 
+					</p>
+			</section>
+			<section>
+				<h2 id="tips">My Top 5 Photography Tips</h2>
+					<ol>
+					<li>Always check your lighting</li>
+					<li>Make sure to use composition techniques</li>
+					<li>Keep your lens clean</li>
+					<li>Experiment with different angles</li>
+					<li>Don't be afraid to take hundreds of photos</li>
+					<li>Photo editing is your best friend</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Gallery Preview</h2>
+				<div id="gallery">
+					<img src="images/gallery1.jpg"  alt="Gathering place trail, Gathering Place, Tulsa OK"> <!-- originally had lenght and hight but it is now removd and done through CSS-->
+					<img src="images/gallery2.jpg" alt="Golden Retriever pet portrait">
+					<img src="images/gallery3.jpg" alt="Golden Retriever pet portrait">
+					<img src="images/gallery4.jpg" alt="Fashion photoshoot, downtown Lawrence KS">
+					<img src="images/gallery5.jpg" alt="Clinton Lake, Lawrence KS">
+					<img src="images/gallery6.jpg" alt="Ambient foggy morning">
+					<img src="images/gallery7.jpg" alt="Clear skys with the sun visible on the horizon, Olathe KS">
+					<img src="images/gallery8.jpg" alt="Geese searching for food on a lake shore, Clinton Lake, Lawrence KS">
+					<img src="images/gallery9.jpg" alt="Rare sun halo captured on the horizon, Olathe KS">
+					<img src="images/gallery10.jpg" alt="Beautiful clouds during a sunset, Olathe KS">
+					<img src="images/gallery11.jpg" alt="Food photograph">
+					<img src="images/gallery12.jpg" alt="4th of July Fireworks, Overland Park KS">
+					<img src="images/gallery13.jpg" alt="Aloe plant gleaming in the sun">
+					<img src="images/gallery14.jpg" alt="Tawny emperor butterfly, Olathe KS">
+					<img src="images/gallery15.jpg" alt="Panchiko indie rock band concert, The Truman, Kansas City MO">
+					<img src="images/gallery16.jpg" alt="Panchiko indie rock band concert, The Truman, Kansas City MO">
+					<img src="images/gallery17.jpg" alt="Car photo, 2006 Acura TL">
+					<img src="images/gallery18.jpg" alt="Beautiful sunset with altocumulus clouds, Lawrence KS">
+					<img src="images/gallery19.jpg" alt="Golden Retriever pet portrait">
+					<img src="images/gallery20.jpg" alt="Beautiful sunset on the beach, St. Augustine FL">
+					<img src="images/gallery21.jpg" alt="Car photo, Nissan 350z">
+				</div>
+			</section>
+			<section>
+				<h2>Contact Me</h2>
+				<p>
+				Interested in a photoshoot or collaboration? Feel free to <a href="final3.html">Contact me</a>.
+				</p>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2025 Adrian Wangerin Photography. All rights reserved.</p>
+			<p>Contact: <a href="mailto:adrian.wangerin2445@gmail.com">adrian.wangerin2445@gmail.com</a></p>
+		</footer>
+	</div>
+</body>
+</html>
